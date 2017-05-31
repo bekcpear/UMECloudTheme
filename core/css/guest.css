@@ -1,0 +1,46 @@
+/* ---------------------
+ * author:Bekcpear 
+ * email: i@ume.ink
+ * -------------------*/
+
+body#body-login {
+  background: #7986CB;
+}
+
+body#body-login input.primary,
+body#body-login button.primary {
+  background-image: url(../img/actions/confirm.svg);
+  color: #555;
+}
+
+body#body-login input.primary:active,
+body#body-login button.primary:active,
+body#body-login input[type='submit']:active,
+body#body-login input[type='button']:active,
+body#body-login button:active,
+body#body-login .button:active,
+body#body-login select:active {
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+}
+
+#remember_login:hover+label,
+#forgot-password:hover,
+p.info a:hover {
+  opacity: 1;
+}
+
+body#body-login input.primary,
+body#body-login button.primary,
+body#body-login input[type='submit'],
+body#body-login input[type='button'],
+body#body-login button,
+body#body-login .button,
+body#body-login select {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+body#body-login form button span {
+  cursor: pointer;
+}

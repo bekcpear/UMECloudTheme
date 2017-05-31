@@ -1,0 +1,327 @@
+/* ---------------------
+ * author:Bekcpear 
+ * email: i@ume.ink
+ * -------------------*/
+
+body {
+  font-family: Roboto, RobotoDraft, Helvetica, "Helvetica Neue", "Noto Sans Mono CJK SC", "Noto Sans Mono CJK TC", sans-serif;
+}
+
+/*
+ * Main background color
+ **/
+body,
+.mask,
+#filestable thead,
+#notification,
+#app-content,
+table.multiselect thead th,
+table thead th,
+#controls,
+#app-settings-content,
+#app-navigation {
+  background-color: #f2f2f2;
+}
+
+/*
+ * #header background, height, shadow and logo
+ **/
+#body-user #header,
+#body-settings #header,
+#body-public #header {
+  height: 60px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+}
+#header .logo {
+  background-image: url('../img/logo.svg');
+  width: 250px;
+  height: 121px;
+}
+#header .logo-icon {
+  background-image: url('../img/logo-icon.svg');
+  width: 62px;
+  height: 34px;
+}
+
+/*
+ * The elements in the header
+ **/
+#appmenu li a img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(invert='1');
+}
+#appmenu li:hover a:before,
+#appmenu li a.active:before {
+  display: none;
+}
+#appmenu li span {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.searchbox input[type='search']:focus,
+.searchbox input[type='search']:active,
+.searchbox input[type='search']:valid {
+  color: #323232;
+  border-color: #f2f2f2 !important;
+}
+.searchbox input[type='search'] {
+  background: transparent url(../img/actions/search.svg?v=1) no-repeat 6px center;
+}
+.searchbox .icon-close-white {
+  background-image: url(../img/actions/close.svg?v=1);
+}
+#contactsmenu .icon-contacts {
+  background-image: url(../img/places/contacts.svg?v=1);
+}
+#contactsmenu .menutoggle:hover,
+#contactsmenu .menutoggle:focus {
+  opacity: 1;
+}
+#settings .icon-settings-white {
+  background-image: url(../img/actions/settings.svg?v=1);
+}
+
+/*
+ * Something others
+ **/
+#webdavurl,
+.settings-button,
+.nav-trashbin,
+body#body-public #content > #preview {
+  background-color: transparent;
+}
+#controls .button.view-switcher {
+  padding: 8px 11px;
+}
+#controls .button, #controls button {
+  padding: 6px 10px;
+}
+#breadcrumbs {
+  margin-right: 10px;
+}
+div.crumb.last {
+  margin-right: 0;
+}
+.right #album-info-button,
+.right #shared-button {
+  display: block;
+  float: left;
+}
+
+/*
+ * Layout
+ **/
+#content-wrapper {
+  padding-top: 60px;
+}
+#content #userlist.hascontrols {
+  margin-top: 70px;
+}
+#controls,
+#app-sidebar,
+#filestable thead {
+  top: 60px;
+}
+#controls {
+  padding: 20px 0 10px 0;
+  height: 74px;
+}
+#filestable thead {
+  position: fixed;
+  z-index: 10;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+#filestable {
+  top: 80px;
+}
+#filestable.has-controls {
+  top: 125px;
+}
+#filestable.has-controls thead {
+  position: fixed;
+  top: 134px;
+  z-index: 10;
+  box-sizing: border-box;
+  padding-top: 0;
+  margin-right: 0;
+}
+#filestable thead th {
+  border-bottom: 0;
+}
+#app-settings-header,
+#app-settings-content,
+#app-navigation {
+  border-right: 0;
+}
+#app-navigation > ul,
+#filestable thead {
+  padding-top: 20px;
+}
+#app-navigation li {
+  width: calc(100% - 20px);
+}
+
+/*
+ * buttons & navigation links
+ **/
+button::-moz-focus-inner {
+  border: 0;
+}
+input:not([type='range']):not(:disabled):not(.primary):active,
+textarea:not(:disabled):not(.primary):active {
+  background-color: #fff;
+}
+input[type="button"]:not(:disabled):not(.primary):active,
+input[type="file"]:not(:disabled):not(.primary):active,
+input[type="image"]:not(:disabled):not(.primary):active,
+input[type="radio"]:not(:disabled):not(.primary):active,
+input[type="reset"]:not(:disabled):not(.primary):active,
+input[type="submit"]:not(:disabled):not(.primary):active,
+.settings-button:hover,
+.settings-button:focus,
+select:not(:disabled):not(.primary):active,
+button:not(:disabled):not(.primary):active,
+.button:not(:disabled):not(.primary):active,
+#quota:not(:disabled):not(.primary):active,
+.pager li a:not(:disabled):not(.primary):active {
+  background-color: #f2f2f2;
+}
+#app-navigation > ul > li a.selected,
+#app-navigation > ul > li:focus > a,
+#app-navigation > ul > li:hover > a,
+#app-navigation > ul > li.active > a,
+#app-navigation > ul > li a.selected > a,
+#app-navigation > ul > li:focus,
+#app-navigation > ul > li:hover,
+#app-navigation > ul > li.active {
+  box-shadow: none;
+  background-color: #dfdfdf;
+}
+#app-navigation > ul > li:focus,
+#app-navigation > ul > li:hover,
+#app-navigation > ul > li.active {
+  opacity: .9;
+}
+#app-navigation > ul > li a.selected,
+#app-navigation > ul > li:focus > a,
+#app-navigation > ul > li:hover > a,
+#app-navigation > ul > li.active > a,
+#app-navigation > ul > li a.selected > a {
+  opacity: .57;
+}
+
+/*
+ * primary buttons
+ **/
+select.primary,
+button.primary,
+.button.primary,
+input:not([type='range']).primary,
+textarea.primary,
+#quota.primary,
+.pager li a.primary {
+  border: 1px solid #7986cb;
+  background-color: #7986cb;
+}
+select.primary:not(:disabled):hover,
+button.primary:not(:disabled):hover,
+.button.primary:not(:disabled):hover,
+input:not([type='range']).primary:not(:disabled):hover,
+textarea.primary:not(:disabled):hover,
+#quota.primary:not(:disabled):hover,
+.pager li a.primary:not(:disabled):hover,
+select.primary:not(:disabled):focus,
+button.primary:not(:disabled):focus,
+.button.primary:not(:disabled):focus,
+input:not([type='range']).primary:not(:disabled):focus,
+textarea.primary:not(:disabled):focus,
+#quota.primary:not(:disabled):focus,
+.pager li a.primary:not(:disabled):focus {
+  background-color: #7986cb;
+}
+select.primary:not(:disabled):active,
+button.primary:not(:disabled):active,
+.button.primary:not(:disabled):active,
+input:not([type='range']).primary:not(:disabled):active,
+textarea.primary:not(:disabled):active,
+#quota.primary:not(:disabled):active,
+.pager li a.primary:not(:disabled):active {
+  background-color: rgba(121, 134, 203, .7);
+}
+select.primary:disabled,
+button.primary:disabled,
+.button.primary:disabled,
+input:not([type='range']).primary:disabled,
+textarea.primary:disabled,
+#quota.primary:disabled,
+.pager li a.primary:disabled {
+  background-color: rgba(121, 134, 203, .7);
+  color: #7986cb;
+}
+select:not(:disabled):not(.primary):not(#quota):hover,
+button:not(:disabled):not(.primary):not(#quota):hover,
+.button:not(:disabled):not(.primary):not(#quota):hover,
+input:not([type='range']):not(:disabled):not(.primary):not(#quota):hover,
+textarea:not(:disabled):not(.primary):not(#quota):hover,
+#quota:not(:disabled):not(.primary):not(#quota):hover,
+.pager li a:not(:disabled):not(.primary):not(#quota):hover,
+select:not(:disabled):not(.primary):focus,
+button:not(:disabled):not(.primary):focus,
+.button:not(:disabled):not(.primary):focus,
+input:not([type='range']):not(:disabled):not(.primary):focus,
+textarea:not(:disabled):not(.primary):focus,
+#quota:not(:disabled):not(.primary):focus,
+.pager li a:not(:disabled):not(.primary):focus,
+select:not(:disabled):not(.primary).active,
+button:not(:disabled):not(.primary).active,
+.button:not(:disabled):not(.primary).active,
+input:not([type='range']):not(:disabled):not(.primary).active,
+textarea:not(:disabled):not(.primary).active,
+#quota:not(:disabled):not(.primary).active,
+.pager li a:not(:disabled):not(.primary).active {
+  border-color: #dbdbdb;
+  outline: none;
+}
+
+/*
+ * CSS under public pages
+ **/
+body#body-public {
+  background-color: #fff;
+}
+body#body-public #content .directDownload,
+body#body-public #content .directLink {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+body#body-public #nextcloud:active {
+  opacity: 0.75;
+}
+body#body-public #nextcloud,
+body#body-public #nextcloud:hover,
+body#body-public #nextcloud:focus {
+  opacity: 1;
+}
+body#body-public #nextcloud .header-appname {
+  color: #424242;
+}
+
+/*
+ * a few CSS settings under mobile pages
+ **/
+@media only screen and (max-width: 768px) {
+  #app-navigation-toggle {
+    top: 60px;
+    padding-top: 20px;
+  }
+  .snapjs-left #filestable thead {
+    top: 0;
+  }
+  .snapjs-left #filestable.has-controls thead {
+    top: 74px;
+  }
+}
