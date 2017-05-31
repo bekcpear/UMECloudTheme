@@ -4,25 +4,25 @@ This is a theme for NextCloud, it's compatible with version 12.0.0
 
 **It's easy to install**
 
-1st. change to your NextCloud theme directory:
+1. change to your NextCloud theme directory:
 
 ```
 $ cd /path/to/nextcloud/themes/
 ```
 
-2nd. clone this repository to the current path (also need the `git` command):
+2. clone this repository to the current path (also need the `git` command):
 
 ```
 $ git clone --branch master https://github.com/Bekcpear/UMECloudTheme.git
 ```
 
-3rd. edit `/path/to/nextcloud/themes/UMEThemeCloud/defaults.php` to do some personal settings.
+3. edit `/path/to/nextcloud/themes/UMEThemeCloud/defaults.php` to do some personal settings.
 
-4th. copy your own logo and favicon images to override the corresponding images in `/path/to/nextcloud/themes/UMEThemeCloud/core/img` directory.
+4. copy your own logo and favicon images to override the corresponding images in `/path/to/nextcloud/themes/UMEThemeCloud/core/img` directory.
 
-5th. fix the permission of UMECloudTheme directory and all it's subdirectories and files.
+5. fix the permission of UMECloudTheme directory and all it's subdirectories and files.
 
-6th. use the following function to replace `adjustControlsWidth` function in the `/path/to/nextcloud/core/js/js.js` file (the codes probably between lines 1616-1642):
+6. use the following function to replace `adjustControlsWidth` function in the `/path/to/nextcloud/core/js/js.js` file (the codes probably between lines 1616-1642):
 
 ```
 var adjustControlsWidth = function() {
@@ -46,7 +46,7 @@ var adjustControlsWidth = function() {
     if($(window).width() > 768
       && ( $('#app-sidebar').hasClass('hidden')
       || $('#app-sidebar').hasClass('disappear'))) {
-      controlsWidth -= 20;                                                                                         
+      controlsWidth -= 20;
       $('#app-content').css('margin-right', 20); 
       $('#filestable thead').css('width', controlsWidth);
     }
@@ -57,9 +57,9 @@ var adjustControlsWidth = function() {
 };
 ```
 
-7th. edit `/path/to/nextcloud/config/config.php` to set `'theme' => 'UMEThemeCloud',` , and save it.
+7. edit `/path/to/nextcloud/config/config.php` to set `'theme' => 'UMEThemeCloud',` , and save it.
 
-8th. refresh you NextCloud page (clean the cache at this time) an enjoy it.
+8. refresh you NextCloud page (clean the cache at this time) an enjoy it.
 
 ## Screenshots
 
