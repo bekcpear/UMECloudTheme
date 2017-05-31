@@ -29,6 +29,7 @@ table thead th,
 #body-user #header,
 #body-settings #header,
 #body-public #header {
+  padding: 0 10px;
   height: 60px;
   background-color: #fff;
   -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
@@ -308,7 +309,7 @@ body#body-public #nextcloud:focus {
   opacity: 1;
 }
 body#body-public #nextcloud .header-appname {
-  color: #424242;
+  display: none;
 }
 
 /*
