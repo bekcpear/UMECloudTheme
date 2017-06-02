@@ -6,6 +6,9 @@
 body {
   font-family: Roboto, RobotoDraft, Helvetica, "Helvetica Neue", "Noto Sans Mono CJK SC", "Noto Sans Mono CJK TC", sans-serif;
 }
+#body-login {
+  background: #7986CB;
+}
 
 /*
  * Main background color
