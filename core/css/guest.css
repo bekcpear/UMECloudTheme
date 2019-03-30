@@ -9,6 +9,10 @@ body#body-login {
 
 body#body-login input.primary,
 body#body-login button.primary {
+  color: #555;
+}
+
+.icon-confirm-white {
   background-image: url(../img/actions/confirm.svg);
   color: #555;
 }
