@@ -239,6 +239,14 @@ div.crumb > a, div.crumb > span {
 #searchresults.filter-empty {
   margin-top: 50px !important;
 }
+.preview.formatted-text p,
+.preview.formatted-text details {
+  word-break: break-word;
+}
+#app-sidebar {
+  position: fixed;
+  top: 60px;
+}
 
 /*
  * Layout
