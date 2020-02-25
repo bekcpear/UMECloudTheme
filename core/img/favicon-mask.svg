@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
-<svg id="svg5818" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" style="shape-rendering:crispEdges" xmlns="http://www.w3.org/2000/svg" height="64" width="64" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 63.999999 63.999999">
- <title id="title5826">UME.INK Favico</title>
- <metadata id="metadata5823">
-  <rdf:RDF>
-   <cc:Work rdf:about="">
-    <dc:format>image/svg+xml</dc:format>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:title>UME.INK Favico</dc:title>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Bekcpear</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <g id="layer1" transform="translate(0 -988.36)" fill="#7986cb">
-  <rect id="rect6008" height="54" width="9" y="993.36" x="5"/>
-  <rect id="rect6010" height="10" width="21.559" y="1037.4" x="13.441"/>
-  <rect id="rect6014" height="54" width="9" y="993.36" x="50"/>
-  <rect id="rect6016" height="12" width="20" y="1014.4" x="25"/>
- </g>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg5818"
+   style="shape-rendering:crispEdges"
+   height="16"
+   width="16"
+   version="1.1"
+   viewBox="0 0 16 16"
+   sodipodi:docname="favicon-mask.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <defs
+     id="defs4597" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1160"
+     id="namedview4595"
+     showgrid="false"
+     inkscape:zoom="41.277358"
+     inkscape:cx="7.4040386"
+     inkscape:cy="7.8217291"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5818" />
+  <title
+     id="title5826">UME.INK Favico</title>
+  <metadata
+     id="metadata5823">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>UME.INK Favico</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Bekcpear</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="matrix(0.24074074,0,0,0.24056237,0.2962963,-237.46503)"
+     style="fill:#7986cb">
+    <rect
+       id="rect6008"
+       height="54"
+       width="9"
+       y="993.35999"
+       x="5" />
+    <rect
+       id="rect6010"
+       height="10"
+       width="21.559"
+       y="1037.4"
+       x="13.441" />
+    <rect
+       id="rect6014"
+       height="54"
+       width="9"
+       y="993.35999"
+       x="50" />
+    <rect
+       id="rect6016"
+       height="12"
+       width="20"
+       y="1014.4"
+       x="25" />
+  </g>
 </svg>

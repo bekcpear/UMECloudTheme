@@ -2,49 +2,31 @@
  * author:Bekcpear 
  * email: i@ume.ink
  * -------------------*/
-
 body#body-login {
-  background: #7986CB;
-}
+  font-family: Roboto, RobotoDraft, Helvetica, "Helvetica Neue", "Noto Sans Mono CJK SC", "Noto Sans Mono CJK TC", sans-serif !important;
+  background: #7986CB; }
+  body#body-login header #header .logo {
+    background-image: none; }
+    body#body-login header #header .logo img {
+      opacity: 1; }
+  body#body-login main form input#password + label + a.toggle-password {
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/actions/toggle.svg); }
+    body#body-login main form input#password + label + a.toggle-password img {
+      display: none; }
+  body#body-login main form input#password[type=text] + label + a.toggle-password {
+    background-image: url(../img/actions/toggle-hide.svg); }
+  body#body-login main form input.primary {
+    color: #555 !important;
+    background-color: #ffffff;
+    border: none !important;
+    transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1), background 200ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 400ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149) !important; }
+    body#body-login main form input.primary:hover {
+      background-color: #f5f5f5;
+      box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.302), 0 4px 8px 3px rgba(60, 64, 67, 0.149) !important; }
+  body#body-login main form .icon-confirm-white {
+    display: none; }
 
-body#body-login input.primary,
-body#body-login button.primary {
-  color: #555;
-}
-
-.icon-confirm-white {
-  background-image: url(../img/actions/confirm.svg);
-  color: #555;
-}
-
-body#body-login input.primary:active,
-body#body-login button.primary:active,
-body#body-login input[type='submit']:active,
-body#body-login input[type='button']:active,
-body#body-login button:active,
-body#body-login .button:active,
-body#body-login select:active {
-  border: 1px solid #f2f2f2;
-  background-color: #f2f2f2;
-}
-
-#remember_login:hover+label,
-#forgot-password:hover,
-p.info a:hover {
-  opacity: 1;
-}
-
-body#body-login input.primary,
-body#body-login button.primary,
-body#body-login input[type='submit'],
-body#body-login input[type='button'],
-body#body-login button,
-body#body-login .button,
-body#body-login select {
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-body#body-login form button span {
-  cursor: pointer;
-}
+/*# sourceMappingURL=guest.css.map */

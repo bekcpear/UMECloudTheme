@@ -1,0 +1,271 @@
+/* ---------------------
+ * author:Bekcpear 
+ * email: i@ume.ink
+ * -------------------*/
+
+@import 'var.scss';
+
+nav .menu:after,
+div .menu:after,
+#settings #expand:before,
+.bubble:after,
+.app-navigation-entry-menu:after,
+.popovermenu:after,
+.tooltip div:after,
+.tooltip div:before,
+.tooltip:after,
+.tooltip:before,
+.action-item__menu .action-item__menu_arrow {
+  display: none !important;
+}
+
+aside {
+  .icon-close {
+    background-color: rgba(127,127,127,0.2);
+  }
+}
+
+body#body-user, body#body-settings, body#body-public {
+  font-family: $font !important;
+  header {
+    &#header {
+      background-color: $bc;
+      background-image: none;
+      border-bottom: solid 1px $lc;
+      .header-appname, .header-shared-by {
+        color: $fc;
+      }
+      .header-left {
+        #nextcloud {
+          .logo-icon {
+            background-image: url($icon);
+          }
+        }
+        #appmenu {
+          filter: invert(1);
+          li, li:hover {
+            a::before, a.active::before, a.focus::before {
+              display: none !important;
+            }
+            svg {
+              width: 18px;
+              height: 18px;
+            }
+            span {
+              font-size: small;
+              background-color: transparent !important;
+            }
+          }
+        }
+      }
+      .header-right {
+        .searchbox {
+          .icon-search-force-white {
+            background-image: var(--icon-search-000);
+            background-position-x: 10px;
+          }
+          input[type='search'] {
+            padding-left: 35px;
+            padding-right: 25px;
+            &:focus, &:active, &:valid {
+              color: $fc;
+              border: none !important;
+              box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149) !important;
+            }
+          }
+          .icon-close-white {
+            background-image: var(--icon-close-000);
+            opacity: 0.7;
+            margin-right: 5px;
+          }
+        }
+        .notifications {
+          .notifications-button {
+            filter: invert(1);
+          }
+        }
+        #contactsmenu {
+          .icon-contacts {
+            background-image: var(--icon-contacts-000);
+          }
+        }
+        #header-actions-toggle.icon-more-white {
+          filter: invert(1);
+        }
+      }
+    }
+  }
+  .button {
+    transition: color 200ms cubic-bezier(0.4,0.0,0.2,1), background 200ms cubic-bezier(0.4,0.0,0.2,1),box-shadow 400ms cubic-bezier(0.4,0.0,0.2,1) !important;
+    color: $fc !important;
+    background-color: $bc !important;
+    border: none !important;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149) !important;
+    &:hover {
+      background-color: var(--color-background-hover) !important;
+      box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149) !important;
+    }
+    &:active {
+      background-color: $mc !important;
+    }
+  }
+  #content {
+    @media only screen and (min-width: 1025px) {
+      #app-navigation {
+        border-right: none;
+        width: 320px;
+        padding-top: 30px;
+        margin-right: 30px;
+        ul {
+          li {
+            box-shadow: none !important;
+            a {
+              box-shadow: none !important;
+              border-top-right-radius: 22px;
+              border-bottom-right-radius: 22px;
+              padding-left: $pl;
+              background-position-x: $bp;
+              opacity: 0.7;
+              &.active {
+                background-color: rgba($mc, 0.7) !important;
+                opacity: 1 !important;
+              }
+              &:hover, &:focus, &:active {
+                background-color: rgba($mc, 0.5);
+                opacity: 0.9;
+              }
+            }
+            &.active {
+              a {
+                background-color: rgba($mc, 0.7) !important;
+                opacity: 1 !important;
+              }
+            }
+            > ul {
+              > li {
+                padding-left: 0;
+                a {
+                  padding-left: $pl + 40px;
+                  background-position-x: $bp + 40px;
+                  line-height: 34px;
+                  min-height: 34px;
+                }
+              }
+            }
+            &#quota {
+              a.active, a:hover, a:focus, a:active {
+                background-color: transparent !important;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+              }
+            }
+            &.collapsible {
+              &:before {
+                width: 30px;
+                opacity: 0.6;
+                background-color: transparent;
+              }
+            }
+            &.collapsible:active, &.collapsible:focus, &.collapsible:hover {
+              &:before {
+                opacity: 1;
+              }
+            }
+          }
+        }
+        #app-settings {
+          #app-settings-header {
+            button {
+              box-shadow: none;
+              padding-left: $pl;
+              background-position-x: $bp;
+              &:hover, &:focus, &:active {
+                background-color: rgba($mc, 0.5);
+              }
+            }
+          }
+          #app-settings-content {
+            padding-left: 30px;
+            box-shadow: inset 0 3px var(--color-primary);
+            background-color: var(--color-background-hover);
+          }
+        }
+      }
+      #app-content {
+        margin-left: 350px !important;
+        width: calc(100% - 350px) !important;
+      }
+    }
+    #app-content {
+      #controls {
+        #uploadprogresswrapper {
+          border: none !important;
+          #uploadprogressbar {
+            border: none !important;
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149) !important;
+            display: none;
+          }
+          button {
+            border: none !important;
+            transition: background 200ms cubic-bezier(0.4,0.0,0.2,1),box-shadow 400ms cubic-bezier(0.4,0.0,0.2,1) !important;
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149) !important;
+            background-color: $bc;
+            &:hover {
+              background-color: var(--color-background-hover);
+              box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149) !important;
+            }
+            &:active {
+              background-color: $mc;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    > p {
+      + p {
+        display: none;
+      }
+    }
+  }
+}
+body#body-public {
+  header#header {
+    .header-right {
+      #notemenu {
+        display: none;
+      }
+    }
+  }
+  #content {
+    #app-content {
+      #notemenu {
+        display: block;
+        .menutoggle {
+          display: none;
+        }
+        #note-content {
+          display: block;
+          width: initial;
+          padding: 10px 20px;
+          border-bottom: 1px solid $lc;
+          &:before {
+            content: 'Note:';
+            opacity: 0.5;
+            font-weight: bold;
+            position: relative;
+            left: -10px;
+          }
+        }
+      }
+    }
+    @media only screen and (min-width: 1025px) {
+      #app-content {
+        margin-left: 0 !important;
+        width: 100% !important;
+      }
+    }
+  }
+}
+

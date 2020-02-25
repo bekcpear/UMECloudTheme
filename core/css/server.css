@@ -2,548 +2,166 @@
  * author:Bekcpear 
  * email: i@ume.ink
  * -------------------*/
-
-body {
-  font-family: Roboto, RobotoDraft, Helvetica, "Helvetica Neue", "Noto Sans Mono CJK SC", "Noto Sans Mono CJK TC", sans-serif;
-}
-#body-login {
-  background: #7986CB; /* Old browsers */
-  background: -moz-linear-gradient(top, #947bea 0%, #7986CB 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#947bea), color-stop(100%,#7986CB)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #947bea 0%,#7986CB 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #947bea 0%,#7986CB 100%); /* Opera11.10+ */
-  background: -ms-linear-gradient(top, #947bea 0%,#7986CB 100%); /* IE10+ */
-  background: linear-gradient(top, #947bea 0%,#7986CB 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#947bea', endColorstr='#7986CB',GradientType=0 ); /* IE6-9 */
-}
-
-#controls .actions > div > .button,
-#controls .actions > .button,
-#controls .actions > div button,
-#controls .actions button {
-  border: none;
-  background: transparent;
-  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
-}
-#controls .actions > div > .button:hover,
-#controls .actions > div > .button:focus,
-#controls .actions > .button:hover,
-#controls .actions > .button:focus,
-#controls .actions > div button:hover,
-#controls .actions > div button:focus,
-#controls .actions button:hover,
-#controls .actions button:focus {
-  box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149);
-  background-color: #f8f9fa;
-}
-
-/*
- * Main background color
- **/
-body,
-.icon-close {
-  background-color: #fff;
-}
-.mask,
-#filestable thead,
-#notification,
-#app-content,
-table.multiselect thead th,
-table thead th,
-button,
-#controls,
-#app-settings-content,
-#app-navigation {
-  background-color: transparent;
-}
-table th, table td {
-  border-bottom: 1px solid #dadce0;
-}
-
-/*
- * #header background, height, shadow and logo
- **/
-#body-user #header,
-#body-settings #header,
-#body-public #header {
-  padding: 0 10px;
-  height: 60px;
-  box-sizing: border-box;
-  background-color: #fff;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-bottom: 1px solid #dadce0;
-}
-#header .logo {
-  background-image: url('../img/logo.svg');
-  width: 250px;
-  height: 121px;
-}
-#header .logo-icon {
-  background-image: url('../img/logo-icon.svg');
-  width: 62px;
-  height: 34px;
-  position: initial;
-}
-
-/*
- * The elements in the header
- **/
-#appmenu {
-  filter: invert(1);
-}
-#appmenu li a.active::before,
-#appmenu li:hover a::before,
-#appmenu li:hover a.active::before,
-#appmenu li a:focus::before {
-  display: none;
-}
-#appmenu li:hover a + span,
-#appmenu li a:focus + span,
-#appmenu li:hover span,
-#appmenu li:focus span,
-#appmenu li a:focus span {
-  background-color: transparent;
-}
-.searchbox input[type='search']:focus,
-.searchbox input[type='search']:active,
-.searchbox input[type='search']:valid {
-}
-.searchbox input[type='search'] {
-  background: transparent url(../img/actions/search.svg?v=1) no-repeat 10px center !important;
-  padding: 5px;
-  padding-left: 0;
-  padding-right: 0;
-  width: 40px;
-  font-size: 1em;
-}
-.searchbox input[type='search'] ~ .icon-close-white {
-  right: 10px;
-  opacity: 0.5;
-}
-.searchbox input[type='search']:active,
-.searchbox input[type='search']:focus,
-.searchbox input[type='search']:valid {
-  padding-left: 33px;
-  padding-right: 30px;
-  box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149) !important;
-  color: #323232;
-  background-color: #fff !important;
-  border-color: #f2f2f2 !important;
-}
-.searchbox .icon-close-white {
-  background-image: url(../img/actions/close.svg?v=1);
-}
-#contactsmenu .icon-contacts {
-  background-image: url(../img/places/contacts.svg?v=1);
-}
-#contactsmenu .menutoggle:hover,
-#contactsmenu .menutoggle:focus {
-  opacity: 1;
-}
-#settings .icon-settings-white {
-  background-image: url(../img/actions/settings.svg?v=1);
-}
-.icon-more-white, .icon-more.icon-white {
-  background-image: var(--icon-more-000);
-}
-.icon-comment-white, .icon-comment.icon-white {
-  background-image: var(--icon-comment-000);
-}
-.header-right #notemenu {
-  display: none !important;
-}
-#app-content #notemenu {
-  display: block;
-}
-#app-content #notemenu .menutoggle {
-  display: none;
-}
-#app-content #notemenu #note-content {
-  width: 100%;
-  padding: 5px 20px;
-  border-bottom: 1px solid #dadce0;
-}
-#app-content #notemenu #note-content:before {
-  content: "Note:";
-  opacity: 0.6;
-}
-#content.full-height #app-content #notemenu {
-  width: 10%;
-  height: 100%;
-}
-#content.full-height #app-content #notemenu #note-content {
-  border: none;
-}
-#content.full-height #app-content #notemenu #note-content .content {
-  max-height: initial;
-}
-#content.full-height #app-content #notemenu + #files-public-content iframe#pdframe {
-  width: 90% !important;
-  left: initial !important;
-  right: 0 !important;
-}
-
-/*
- * Something others
- **/
-#webdavurl,
-.settings-button,
-.nav-trashbin,
-body#body-public #content > #preview {
-  background-color: transparent;
-}
-#controls .button.view-switcher {
-  padding: 8px 11px;
-}
-#controls .button, #controls button {
-  padding: 6px 10px;
-}
-.breadcrumb,
-.actions.creatable,
-div.crumb {
-  height: 50px;
-}
-
-div.crumb > a, div.crumb > span {
-  padding: 14px;
-}
-.right #album-info-button,
-.right #shared-button {
-  display: block;
-  float: left;
-}
-.notifications-button {
-  filter: invert(1);
-}
-.notifications-button img {
-  opacity: 0.6;
-}
-.notifications-button:hover,
-.notifications-button:focus {
-  opacity: 1 !important;
-}
-#header .header-left > nav > .menu:after,
-#header .header-right > div > .menu:after,
+nav .menu:after,
+div .menu:after,
+#settings #expand:before,
 .bubble:after,
 .app-navigation-entry-menu:after,
-.popovermenu:after {
-  display: none;
-}
-.newFileMenu {
-  top: calc(100% - 5px);
-}
-#imgframe .text-preview {
-  overflow-y: visible;
-}
-#searchresults.filter-empty {
-  margin-top: 50px !important;
-}
-.preview.formatted-text p,
-.preview.formatted-text details {
-  word-break: break-word;
-}
-#app-sidebar {
-  position: fixed;
-  top: 60px;
-}
+.popovermenu:after,
+.tooltip div:after,
+.tooltip div:before,
+.tooltip:after,
+.tooltip:before,
+.action-item__menu .action-item__menu_arrow {
+  display: none !important; }
 
-/*
- * Layout
- **/
-#content, #content-wrapper {
-  padding-top: 60px;
-}
-#content #userlist.hascontrols {
-  margin-top: 70px;
-}
-#controls {
-  background-color: #fff;
-  padding: 20px 0 10px 0;
-  height: 80px;
-  width: 100%;
-  border-bottom: 1px solid #dadce0;
-  position: fixed;
-  z-index: 200;
-  top: 60px;
-}
-.actions {
-  padding: 0;
-  align-items: center;
-}
-#view-toggle {
-  padding: 25px;
-  margin-top: 20px;
-}
-#view-toggle+.tooltip {
-  display: none !important;
-}
+aside .icon-close {
+  background-color: rgba(127, 127, 127, 0.2); }
 
-#filestable thead {
-  background-color: #fff;
-  position: fixed;
-  top: 60px;
-  z-index: 10;
-  box-sizing: border-box;
-}
-#filestable {
-  top: 70px;
-  min-height: 320px;
-}
-#filestable tfoot .summary {
-  height: 320px;
-}
-#filestable.has-controls {
-  top: 130px;
-  min-height: 380px;
-}
-#filestable.has-controls tfoot .summary { 
-  height: 380px;
-}
-#filestable.has-controls thead {
-  position: fixed;
-  top: 140px;
-  z-index: 100;
-  box-sizing: border-box;
-  padding-top: 0;
-  margin-right: 0;
-}
-#filestable thead th {
-  border-bottom: 0;
-}
-#app-navigation {
-  height: calc(100% - 60px);
-}
-#app-settings-header,
-#app-settings-content,
-#app-navigation {
-  border-right: 0;
-  top: 60px;
-}
-#app-navigation,
-#filestable thead {
-  padding-top: 20px;
-}
+body#body-user, body#body-settings, body#body-public {
+  font-family: Roboto, RobotoDraft, Helvetica, "Helvetica Neue", "Noto Sans Mono CJK SC", "Noto Sans Mono CJK TC", sans-serif !important; }
+  body#body-user header#header, body#body-settings header#header, body#body-public header#header {
+    background-color: var(--color-main-background);
+    background-image: none;
+    border-bottom: solid 1px var(--color-background-darker); }
+    body#body-user header#header .header-appname, body#body-user header#header .header-shared-by, body#body-settings header#header .header-appname, body#body-settings header#header .header-shared-by, body#body-public header#header .header-appname, body#body-public header#header .header-shared-by {
+      color: var(--color-main-text); }
+    body#body-user header#header .header-left #nextcloud .logo-icon, body#body-settings header#header .header-left #nextcloud .logo-icon, body#body-public header#header .header-left #nextcloud .logo-icon {
+      background-image: url("../img/logo-icon.svg"); }
+    body#body-user header#header .header-left #appmenu, body#body-settings header#header .header-left #appmenu, body#body-public header#header .header-left #appmenu {
+      filter: invert(1); }
+      body#body-user header#header .header-left #appmenu li a::before, body#body-user header#header .header-left #appmenu li a.active::before, body#body-user header#header .header-left #appmenu li a.focus::before, body#body-user header#header .header-left #appmenu li:hover a::before, body#body-user header#header .header-left #appmenu li:hover a.active::before, body#body-user header#header .header-left #appmenu li:hover a.focus::before, body#body-settings header#header .header-left #appmenu li a::before, body#body-settings header#header .header-left #appmenu li a.active::before, body#body-settings header#header .header-left #appmenu li a.focus::before, body#body-settings header#header .header-left #appmenu li:hover a::before, body#body-settings header#header .header-left #appmenu li:hover a.active::before, body#body-settings header#header .header-left #appmenu li:hover a.focus::before, body#body-public header#header .header-left #appmenu li a::before, body#body-public header#header .header-left #appmenu li a.active::before, body#body-public header#header .header-left #appmenu li a.focus::before, body#body-public header#header .header-left #appmenu li:hover a::before, body#body-public header#header .header-left #appmenu li:hover a.active::before, body#body-public header#header .header-left #appmenu li:hover a.focus::before {
+        display: none !important; }
+      body#body-user header#header .header-left #appmenu li svg, body#body-user header#header .header-left #appmenu li:hover svg, body#body-settings header#header .header-left #appmenu li svg, body#body-settings header#header .header-left #appmenu li:hover svg, body#body-public header#header .header-left #appmenu li svg, body#body-public header#header .header-left #appmenu li:hover svg {
+        width: 18px;
+        height: 18px; }
+      body#body-user header#header .header-left #appmenu li span, body#body-user header#header .header-left #appmenu li:hover span, body#body-settings header#header .header-left #appmenu li span, body#body-settings header#header .header-left #appmenu li:hover span, body#body-public header#header .header-left #appmenu li span, body#body-public header#header .header-left #appmenu li:hover span {
+        font-size: small;
+        background-color: transparent !important; }
+    body#body-user header#header .header-right .searchbox .icon-search-force-white, body#body-settings header#header .header-right .searchbox .icon-search-force-white, body#body-public header#header .header-right .searchbox .icon-search-force-white {
+      background-image: var(--icon-search-000);
+      background-position-x: 10px; }
+    body#body-user header#header .header-right .searchbox input[type='search'], body#body-settings header#header .header-right .searchbox input[type='search'], body#body-public header#header .header-right .searchbox input[type='search'] {
+      padding-left: 35px;
+      padding-right: 25px; }
+      body#body-user header#header .header-right .searchbox input[type='search']:focus, body#body-user header#header .header-right .searchbox input[type='search']:active, body#body-user header#header .header-right .searchbox input[type='search']:valid, body#body-settings header#header .header-right .searchbox input[type='search']:focus, body#body-settings header#header .header-right .searchbox input[type='search']:active, body#body-settings header#header .header-right .searchbox input[type='search']:valid, body#body-public header#header .header-right .searchbox input[type='search']:focus, body#body-public header#header .header-right .searchbox input[type='search']:active, body#body-public header#header .header-right .searchbox input[type='search']:valid {
+        color: var(--color-main-text);
+        border: none !important;
+        box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.302), 0 4px 8px 3px rgba(60, 64, 67, 0.149) !important; }
+    body#body-user header#header .header-right .searchbox .icon-close-white, body#body-settings header#header .header-right .searchbox .icon-close-white, body#body-public header#header .header-right .searchbox .icon-close-white {
+      background-image: var(--icon-close-000);
+      opacity: 0.7;
+      margin-right: 5px; }
+    body#body-user header#header .header-right .notifications .notifications-button, body#body-settings header#header .header-right .notifications .notifications-button, body#body-public header#header .header-right .notifications .notifications-button {
+      filter: invert(1); }
+    body#body-user header#header .header-right #contactsmenu .icon-contacts, body#body-settings header#header .header-right #contactsmenu .icon-contacts, body#body-public header#header .header-right #contactsmenu .icon-contacts {
+      background-image: var(--icon-contacts-000); }
+    body#body-user header#header .header-right #header-actions-toggle.icon-more-white, body#body-settings header#header .header-right #header-actions-toggle.icon-more-white, body#body-public header#header .header-right #header-actions-toggle.icon-more-white {
+      filter: invert(1); }
+  body#body-user .button, body#body-settings .button, body#body-public .button {
+    transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1), background 200ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 400ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+    color: var(--color-main-text) !important;
+    background-color: var(--color-main-background) !important;
+    border: none !important;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149) !important; }
+    body#body-user .button:hover, body#body-settings .button:hover, body#body-public .button:hover {
+      background-color: var(--color-background-hover) !important;
+      box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.302), 0 4px 8px 3px rgba(60, 64, 67, 0.149) !important; }
+    body#body-user .button:active, body#body-settings .button:active, body#body-public .button:active {
+      background-color: #7986CB !important; }
+  @media only screen and (min-width: 1025px) {
+    body#body-user #content #app-navigation, body#body-settings #content #app-navigation, body#body-public #content #app-navigation {
+      border-right: none;
+      width: 320px;
+      padding-top: 30px;
+      margin-right: 30px; }
+      body#body-user #content #app-navigation ul li, body#body-settings #content #app-navigation ul li, body#body-public #content #app-navigation ul li {
+        box-shadow: none !important; }
+        body#body-user #content #app-navigation ul li a, body#body-settings #content #app-navigation ul li a, body#body-public #content #app-navigation ul li a {
+          box-shadow: none !important;
+          border-top-right-radius: 22px;
+          border-bottom-right-radius: 22px;
+          padding-left: 64px;
+          background-position-x: 34px;
+          opacity: 0.7; }
+          body#body-user #content #app-navigation ul li a.active, body#body-settings #content #app-navigation ul li a.active, body#body-public #content #app-navigation ul li a.active {
+            background-color: rgba(121, 134, 203, 0.7) !important;
+            opacity: 1 !important; }
+          body#body-user #content #app-navigation ul li a:hover, body#body-user #content #app-navigation ul li a:focus, body#body-user #content #app-navigation ul li a:active, body#body-settings #content #app-navigation ul li a:hover, body#body-settings #content #app-navigation ul li a:focus, body#body-settings #content #app-navigation ul li a:active, body#body-public #content #app-navigation ul li a:hover, body#body-public #content #app-navigation ul li a:focus, body#body-public #content #app-navigation ul li a:active {
+            background-color: rgba(121, 134, 203, 0.5);
+            opacity: 0.9; }
+        body#body-user #content #app-navigation ul li.active a, body#body-settings #content #app-navigation ul li.active a, body#body-public #content #app-navigation ul li.active a {
+          background-color: rgba(121, 134, 203, 0.7) !important;
+          opacity: 1 !important; }
+        body#body-user #content #app-navigation ul li > ul > li, body#body-settings #content #app-navigation ul li > ul > li, body#body-public #content #app-navigation ul li > ul > li {
+          padding-left: 0; }
+          body#body-user #content #app-navigation ul li > ul > li a, body#body-settings #content #app-navigation ul li > ul > li a, body#body-public #content #app-navigation ul li > ul > li a {
+            padding-left: 104px;
+            background-position-x: 74px;
+            line-height: 34px;
+            min-height: 34px; }
+        body#body-user #content #app-navigation ul li#quota a.active, body#body-user #content #app-navigation ul li#quota a:hover, body#body-user #content #app-navigation ul li#quota a:focus, body#body-user #content #app-navigation ul li#quota a:active, body#body-settings #content #app-navigation ul li#quota a.active, body#body-settings #content #app-navigation ul li#quota a:hover, body#body-settings #content #app-navigation ul li#quota a:focus, body#body-settings #content #app-navigation ul li#quota a:active, body#body-public #content #app-navigation ul li#quota a.active, body#body-public #content #app-navigation ul li#quota a:hover, body#body-public #content #app-navigation ul li#quota a:focus, body#body-public #content #app-navigation ul li#quota a:active {
+          background-color: transparent !important;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0; }
+        body#body-user #content #app-navigation ul li.collapsible:before, body#body-settings #content #app-navigation ul li.collapsible:before, body#body-public #content #app-navigation ul li.collapsible:before {
+          width: 30px;
+          opacity: 0.6;
+          background-color: transparent; }
+        body#body-user #content #app-navigation ul li.collapsible:active:before, body#body-user #content #app-navigation ul li.collapsible:focus:before, body#body-user #content #app-navigation ul li.collapsible:hover:before, body#body-settings #content #app-navigation ul li.collapsible:active:before, body#body-settings #content #app-navigation ul li.collapsible:focus:before, body#body-settings #content #app-navigation ul li.collapsible:hover:before, body#body-public #content #app-navigation ul li.collapsible:active:before, body#body-public #content #app-navigation ul li.collapsible:focus:before, body#body-public #content #app-navigation ul li.collapsible:hover:before {
+          opacity: 1; }
+      body#body-user #content #app-navigation #app-settings #app-settings-header button, body#body-settings #content #app-navigation #app-settings #app-settings-header button, body#body-public #content #app-navigation #app-settings #app-settings-header button {
+        box-shadow: none;
+        padding-left: 64px;
+        background-position-x: 34px; }
+        body#body-user #content #app-navigation #app-settings #app-settings-header button:hover, body#body-user #content #app-navigation #app-settings #app-settings-header button:focus, body#body-user #content #app-navigation #app-settings #app-settings-header button:active, body#body-settings #content #app-navigation #app-settings #app-settings-header button:hover, body#body-settings #content #app-navigation #app-settings #app-settings-header button:focus, body#body-settings #content #app-navigation #app-settings #app-settings-header button:active, body#body-public #content #app-navigation #app-settings #app-settings-header button:hover, body#body-public #content #app-navigation #app-settings #app-settings-header button:focus, body#body-public #content #app-navigation #app-settings #app-settings-header button:active {
+          background-color: rgba(121, 134, 203, 0.5); }
+      body#body-user #content #app-navigation #app-settings #app-settings-content, body#body-settings #content #app-navigation #app-settings #app-settings-content, body#body-public #content #app-navigation #app-settings #app-settings-content {
+        padding-left: 30px;
+        box-shadow: inset 0 3px var(--color-primary);
+        background-color: var(--color-background-hover); }
+    body#body-user #content #app-content, body#body-settings #content #app-content, body#body-public #content #app-content {
+      margin-left: 350px !important;
+      width: calc(100% - 350px) !important; } }
+  body#body-user #content #app-content #controls #uploadprogresswrapper, body#body-settings #content #app-content #controls #uploadprogresswrapper, body#body-public #content #app-content #controls #uploadprogresswrapper {
+    border: none !important; }
+    body#body-user #content #app-content #controls #uploadprogresswrapper #uploadprogressbar, body#body-settings #content #app-content #controls #uploadprogresswrapper #uploadprogressbar, body#body-public #content #app-content #controls #uploadprogresswrapper #uploadprogressbar {
+      border: none !important;
+      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149) !important;
+      display: none; }
+    body#body-user #content #app-content #controls #uploadprogresswrapper button, body#body-settings #content #app-content #controls #uploadprogresswrapper button, body#body-public #content #app-content #controls #uploadprogresswrapper button {
+      border: none !important;
+      transition: background 200ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 400ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149) !important;
+      background-color: var(--color-main-background); }
+      body#body-user #content #app-content #controls #uploadprogresswrapper button:hover, body#body-settings #content #app-content #controls #uploadprogresswrapper button:hover, body#body-public #content #app-content #controls #uploadprogresswrapper button:hover {
+        background-color: var(--color-background-hover);
+        box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.302), 0 4px 8px 3px rgba(60, 64, 67, 0.149) !important; }
+      body#body-user #content #app-content #controls #uploadprogresswrapper button:active, body#body-settings #content #app-content #controls #uploadprogresswrapper button:active, body#body-public #content #app-content #controls #uploadprogresswrapper button:active {
+        background-color: #7986CB; }
+  body#body-user footer > p + p, body#body-settings footer > p + p, body#body-public footer > p + p {
+    display: none; }
 
-/*
- * buttons & navigation links
- **/
-button::-moz-focus-inner {
-  border: 0;
-}
-input:not([type='range']):not(:disabled):not(.primary):active,
-textarea:not(:disabled):not(.primary):active {
-  background-color: #fff;
-}
-input[type="button"]:not(:disabled):not(.primary):active,
-input[type="file"]:not(:disabled):not(.primary):active,
-input[type="image"]:not(:disabled):not(.primary):active,
-input[type="radio"]:not(:disabled):not(.primary):active,
-input[type="reset"]:not(:disabled):not(.primary):active,
-input[type="submit"]:not(:disabled):not(.primary):active,
-.settings-button:hover,
-.settings-button:focus,
-select:not(:disabled):not(.primary):active,
-button:not(:disabled):not(.primary):active,
-.button:not(:disabled):not(.primary):active,
-.pager li a:not(:disabled):not(.primary):active {
-  background-color: #f2f2f2;
-}
-#app-navigation > ul {
-  padding-right: 30px;
-}
-#app-navigation > ul > li > a {
-  padding-left: 64px;
-  background-position-x: 34px;
-}
-#app-navigation > ul > li.active,
-#app-navigation > ul > li a:hover,
-#app-navigation > ul > li a:focus,
-#app-navigation > ul > li a:active,
-#app-navigation > ul > li a.selected,
-#app-navigation > ul > li a.active,
-#app-navigation > ul > li.active > a,
-#app-navigation > ul > li a:hover > a,
-#app-navigation > ul > li a:focus > a,
-#app-navigation > ul > li a:active > a,
-#app-navigation > ul > li a.selected > a,
-#app-navigation > ul > li a.active > a {
-  box-shadow: none;
-  background-color: #7986cb55;
-  border-top-right-radius: 22px;
-  border-bottom-right-radius: 22px;
-}
-#app-navigation > ul > li.app-navigation-caption {
-  padding-left: 20px;
-}
-#app-navigation > ul > li#quota a {
-  padding-left: 44px;
-  background-position-x: 14px;
-  background-color: transparent;
-}
-#app-navigation .collapsible > a:first-child {
-  padding-left: 64px;
-}
-#app-navigation .collapsible:before {
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  top: 12px;
-  left: 10px;
-}
-#app-navigation > ul > li > ul > li {
-  padding-left: 0;
-}
-#app-navigation > ul > li > ul > li > a {
-  padding-left: 108px;
-  background-position-x: 78px;
-  line-height: 34px;
-  min-height: 34px;
-}
-#app-navigation > ul > li.pinned.first-pinned {
-  margin-top: 0 !important;
-}
-#app-navigation > ul > li.pinned.first-pinned + .pinned {
-  margin-top: auto !important;
-}
-#app-settings-content {
-  box-shadow: inset 4px 0 var(--color-primary);
-}
-/*
- * primary buttons
- **/
-select.primary,
-button.primary,
-.button.primary,
-input:not([type='range']).primary,
-textarea.primary,
-#quota.primary,
-.pager li a.primary {
-  border: none;
-  background-color: #7986cb;
-}
-.directDownload #downloadFile.button {
-  color: #fff;
-  border: none;
-  background-color: #7986cb;
-}
-.directDownload #downloadFile.button:active {
-  background-color: rgba(121, 134, 203, .7);
-}
-.directDownload #downloadFile.button span.icon-download {
-  opacity: 1;
-  background-image: var(--icon-download-fff);
-}
-select.primary:not(:disabled):hover,
-button.primary:not(:disabled):hover,
-.button.primary:not(:disabled):hover,
-input:not([type='range']).primary:not(:disabled):hover,
-textarea.primary:not(:disabled):hover,
-#quota.primary:not(:disabled):hover,
-.pager li a.primary:not(:disabled):hover,
-select.primary:not(:disabled):focus,
-button.primary:not(:disabled):focus,
-.button.primary:not(:disabled):focus,
-input:not([type='range']).primary:not(:disabled):focus,
-textarea.primary:not(:disabled):focus,
-#quota.primary:not(:disabled):focus,
-.pager li a.primary:not(:disabled):focus {
-  background-color: #7986cb;
-}
-select.primary:not(:disabled):active,
-button.primary:not(:disabled):active,
-.button.primary:not(:disabled):active,
-input:not([type='range']).primary:not(:disabled):active,
-textarea.primary:not(:disabled):active,
-#quota.primary:not(:disabled):active,
-.pager li a.primary:not(:disabled):active {
-  background-color: rgba(121, 134, 203, .7);
-}
-select.primary:disabled,
-button.primary:disabled,
-.button.primary:disabled,
-input:not([type='range']).primary:disabled,
-textarea.primary:disabled,
-#quota.primary:disabled,
-.pager li a.primary:disabled {
-  background-color: rgba(121, 134, 203, .7);
-  color: #7986cb;
-}
-select:not(:disabled):not(.primary):not(#quota):hover,
-button:not(:disabled):not(.primary):not(#quota):hover,
-.button:not(:disabled):not(.primary):not(#quota):hover,
-input:not([type='range']):not(:disabled):not(.primary):not(#quota):hover,
-textarea:not(:disabled):not(.primary):not(#quota):hover,
-#quota:not(:disabled):not(.primary):not(#quota):hover,
-.pager li a:not(:disabled):not(.primary):not(#quota):hover,
-select:not(:disabled):not(.primary):focus,
-button:not(:disabled):not(.primary):focus,
-.button:not(:disabled):not(.primary):focus,
-input:not([type='range']):not(:disabled):not(.primary):focus,
-textarea:not(:disabled):not(.primary):focus,
-#quota:not(:disabled):not(.primary):focus,
-.pager li a:not(:disabled):not(.primary):focus,
-select:not(:disabled):not(.primary).active,
-button:not(:disabled):not(.primary).active,
-.button:not(:disabled):not(.primary).active,
-input:not([type='range']):not(:disabled):not(.primary).active,
-textarea:not(:disabled):not(.primary).active,
-#quota:not(:disabled):not(.primary).active,
-.pager li a:not(:disabled):not(.primary).active {
-  border-color: #dbdbdb;
-  outline: none;
-}
+body#body-public header#header .header-right #notemenu {
+  display: none; }
+body#body-public #content #app-content #notemenu {
+  display: block; }
+  body#body-public #content #app-content #notemenu .menutoggle {
+    display: none; }
+  body#body-public #content #app-content #notemenu #note-content {
+    display: block;
+    width: initial;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--color-background-darker); }
+    body#body-public #content #app-content #notemenu #note-content:before {
+      content: 'Note:';
+      opacity: 0.5;
+      font-weight: bold;
+      position: relative;
+      left: -10px; }
+@media only screen and (min-width: 1025px) {
+  body#body-public #content #app-content {
+    margin-left: 0 !important;
+    width: 100% !important; } }
 
-/*
- * CSS under public pages
- **/
-body#body-public {
-  background-color: #fff;
-}
-body#body-public #content .directDownload,
-body#body-public #content .directLink {
-  margin-bottom: 0;
-  padding-bottom: 20px;
-}
-#nextcloud {
-  padding-left: 0;
-  padding: 0;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: flex;
-}
-body#body-public #nextcloud:active {
-  opacity: 0.75;
-}
-body#body-public #nextcloud,
-body#body-public #nextcloud:hover,
-body#body-public #nextcloud:focus {
-  opacity: 1;
-}
-body#body-public #nextcloud .header-appname {
-  display: none;
-}
-
-/*
- * a few CSS settings under mobile pages
- **/
-@media only screen and (max-width: 768px) {
-  #app-navigation-toggle {
-    margin-top: 20px;
-    background-color: #dadce0;
-  }
-  .snapjs-left #filestable thead {
-    top: 0;
-  }
-  .snapjs-left #filestable.has-controls thead {
-    top: 74px;
-  }
-  #imgframe {
-    padding-top: 32px;
-    width: 80%;
-  }
-}
-
-footer p:last-child {
-  display: none;
-}
+/*# sourceMappingURL=server.css.map */

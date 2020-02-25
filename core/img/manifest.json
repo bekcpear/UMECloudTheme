@@ -1,6 +1,8 @@
 {
 	"name": "UME Cloud",
 	"start_url": "/",
+  "theme_color": "#7986CB",
+  "background_color": "#ffffff",
 	"icons": [{
 		"src": "favicon-touch.png",
 		"type": "image/png",
