@@ -58,6 +58,8 @@ body#body-user, body#body-settings, body#body-public {
       background-image: var(--icon-contacts-000); }
     body#body-user header#header .header-right #header-actions-toggle.icon-more-white, body#body-settings header#header .header-right #header-actions-toggle.icon-more-white, body#body-public header#header .header-right #header-actions-toggle.icon-more-white {
       filter: invert(1); }
+    body#body-user header#header .header-right #settings ul li a.active, body#body-settings header#header .header-right #settings ul li a.active, body#body-public header#header .header-right #settings ul li a.active {
+      box-shadow: inset 4px 0 #7986CB; }
   body#body-user .button, body#body-settings .button, body#body-public .button {
     transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1), background 200ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 400ms cubic-bezier(0.4, 0, 0.2, 1) !important;
     color: var(--color-main-text) !important;
@@ -122,7 +124,10 @@ body#body-user, body#body-settings, body#body-public {
         background-color: var(--color-background-hover); }
     body#body-user #content #app-content, body#body-settings #content #app-content, body#body-public #content #app-content {
       margin-left: 350px !important;
-      width: calc(100% - 350px) !important; } }
+      width: calc(100% - 350px) !important; }
+      body#body-user #content #app-content #app-content, body#body-settings #content #app-content #app-content, body#body-public #content #app-content #app-content {
+        margin-left: 0 !important;
+        width: 100% !important; } }
   body#body-user #content #app-content #controls #uploadprogresswrapper, body#body-settings #content #app-content #controls #uploadprogresswrapper, body#body-public #content #app-content #controls #uploadprogresswrapper {
     border: none !important; }
     body#body-user #content #app-content #controls #uploadprogresswrapper #uploadprogressbar, body#body-settings #content #app-content #controls #uploadprogresswrapper #uploadprogressbar, body#body-public #content #app-content #controls #uploadprogresswrapper #uploadprogressbar {
@@ -139,6 +144,8 @@ body#body-user, body#body-settings, body#body-public {
         box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.302), 0 4px 8px 3px rgba(60, 64, 67, 0.149) !important; }
       body#body-user #content #app-content #controls #uploadprogresswrapper button:active, body#body-settings #content #app-content #controls #uploadprogresswrapper button:active, body#body-public #content #app-content #controls #uploadprogresswrapper button:active {
         background-color: #7986CB; }
+  body#body-user #content #app-content input:not([type='range']):not(:disabled):not(.primary):focus, body#body-settings #content #app-content input:not([type='range']):not(:disabled):not(.primary):focus, body#body-public #content #app-content input:not([type='range']):not(:disabled):not(.primary):focus {
+    border-color: #7986CB; }
   body#body-user footer > p + p, body#body-settings footer > p + p, body#body-public footer > p + p {
     display: none; }
 

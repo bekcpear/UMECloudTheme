@@ -92,6 +92,13 @@ body#body-user, body#body-settings, body#body-public {
         #header-actions-toggle.icon-more-white {
           filter: invert(1);
         }
+        #settings {
+          ul li {
+            a.active {
+              box-shadow: inset 4px 0 $mc;
+            }
+          }
+        }
       }
     }
   }
@@ -194,6 +201,10 @@ body#body-user, body#body-settings, body#body-public {
       #app-content {
         margin-left: 350px !important;
         width: calc(100% - 350px) !important;
+        #app-content {
+          margin-left: 0 !important;
+          width: 100% !important;
+        }
       }
     }
     #app-content {
@@ -219,6 +230,9 @@ body#body-user, body#body-settings, body#body-public {
             }
           }
         }
+      }
+      input:not([type='range']):not(:disabled):not(.primary):focus {
+        border-color: $mc;
       }
     }
   }
