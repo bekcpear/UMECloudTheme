@@ -52,5 +52,16 @@ body#body-login {
         display: none;
       }
     }
+    a.button.primary {
+      color: #555 !important;
+      background-color: #ffffff;
+      border: none !important;
+      transition: color 200ms cubic-bezier(0.4,0.0,0.2,1), background 200ms cubic-bezier(0.4,0.0,0.2,1),box-shadow 400ms cubic-bezier(0.4,0.0,0.2,1) !important;
+      box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149) !important;
+      &:hover {
+        background-color: #f5f5f5;
+        box-shadow: 0 1px 3px 0 rgba(60,64,67,0.302), 0 4px 8px 3px rgba(60,64,67,0.149) !important;
+      }
+    }
   }
 }

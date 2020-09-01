@@ -146,8 +146,10 @@ body#body-user, body#body-settings, body#body-public {
         background-color: #7986CB; }
   body#body-user #content #app-content input:not([type='range']):not(:disabled):not(.primary):focus, body#body-settings #content #app-content input:not([type='range']):not(:disabled):not(.primary):focus, body#body-public #content #app-content input:not([type='range']):not(:disabled):not(.primary):focus {
     border-color: #7986CB; }
-  body#body-user footer > p + p, body#body-settings footer > p + p, body#body-public footer > p + p {
-    display: none; }
+  body#body-user footer > p, body#body-settings footer > p, body#body-public footer > p {
+    font-size: 90%; }
+    body#body-user footer > p + p, body#body-settings footer > p + p, body#body-public footer > p + p {
+      display: none; }
 
 body#body-public header#header .header-right #notemenu {
   display: none; }
