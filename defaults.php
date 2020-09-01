@@ -105,7 +105,7 @@ class OC_Theme {
 	 * @return string slogan
 	 */
 	public function getSlogan() {
-		return '始于 2017 年的 Alvin 所属私有同步盘 :)';
+		return 'Ryan 的私有同步盘 ε===(っ≧ω≦)っ 始于 2017';
 	}
 
 	/**
@@ -137,7 +137,7 @@ class OC_Theme {
 	}
 
 	public function buildDocLinkToKey($key) {
-		return $this->getDocBaseUrl() . '/server/12/go.php?to=' . $key;
+		return $this->getDocBaseUrl() . '/server/19/go.php?to=' . $key;
 	}
 
 
